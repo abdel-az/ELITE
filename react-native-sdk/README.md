@@ -109,20 +109,20 @@ https://github.com/jitsi/jitsi-meet-sdk-samples/tree/master/react-native
 - If you are planning to add custom overflow menu buttons, you can do that by updating the ```config``` prop, as shown below.
 - For example:
 ```javascript
-  <JitsiMeeting
-    config = {{
-        customToolbarButtons: [
-            {
-                icon: "https://w7.pngwing.com/pngs/987/537/png-transparent-download-downloading-save-basic-user-interface-icon-thumbnail.png",
-                id: "btn1",
-                text: "Button one"
-            }, {
-                icon: "https://w7.pngwing.com/pngs/987/537/png-transparent-download-downloading-save-basic-user-interface-icon-thumbnail.png",
-                id: "btn2",
-                text: "Button two"
-            }
-        ]
-    }}
+ <JitsiMeeting
+    config = { {% raw %}{%{ 
+				customToolbarButtons: [
+					{
+						icon: "https://w7.pngwing.com/pngs/987/537/png-transparent-download-downloading-save-basic-user-interface-icon-thumbnail.png",
+						id: "btn1",
+						text: "Button one"
+					}, {
+						icon: "https://w7.pngwing.com/pngs/987/537/png-transparent-download-downloading-save-basic-user-interface-icon-thumbnail.png",
+						id: "btn2",
+						text: "Button two"
+					}
+				]
+			} }{% endraw %} }
     room = { 'ThisIsNotATestRoomName' }
     serverURL = { 'https://meet.jit.si/' }
     token = { 'dkhalhfajhflahlfaahalhfahfsl' } />
